@@ -30,29 +30,32 @@ for item in nft_data['collection_items']:
 for (trait_type, trait_value), count in sorted(trait_value_counts.items(), key=lambda x: x[1]):
     frequency_percentage = (count / total_items) * 100
 
-# Step 5: Calculate Rarity Scores and Rankings
+# Step 5: Calculate Total Rarity Scores and Rankings
 nft_rankings = []
 
 for nft in nft_data['collection_items']:
     nft_traits = nft['item_attributes']
-    rarity_scores = []
+    total_rarity_score = 0  # Initialize total rarity score for the NFT
+    rarity_scores = []  # Store rarity scores for each trait for later retrieval
 
     for trait in nft_traits:
         trait_type = trait.get('trait_type')  # Ensure 'trait_type' exists
         trait_value = trait.get('value')      # Ensure 'value' exists
-        if not trait_type or not trait_value or trait_type in traits_to_exclude or trait_type == 'rarity':
+        if trait_type in traits_to_exclude or trait_type == 'rarity':  # Skip excluded traits
             continue
         
         count = trait_value_counts[(trait_type, trait_value)]
         rarity_score = 1 / (count / total_items)
-        rarity_scores.append((trait_type, trait_value, rarity_score))
+        total_rarity_score += rarity_score  # Sum all trait rarity scores for the NFT
+        rarity_scores.append((trait_type, trait_value, rarity_score))  # Store for later
 
     if rarity_scores:
-        rarity_scores.sort(key=lambda x: x[2], reverse=True)
-        nft_rankings.append((nft['name'], rarity_scores[0]))
+        # Find the rarest trait based on the highest rarity score
+        rarest_trait = max(rarity_scores, key=lambda x: x[2])
+        nft_rankings.append((nft['name'], total_rarity_score, rarest_trait))
 
-# Step 6: Order Rarity Rankings by Rarest to Least Rare
-nft_rankings.sort(key=lambda x: x[1][2], reverse=True)
+# Step 6: Order NFTs by Total Rarity Score (Descending)
+nft_rankings.sort(key=lambda x: x[1], reverse=True)
 
 # Step 7: Save Rarity Rankings to a File
 txt_filename = r"<ENTER FILE PATH HERE FOR TEXT FILE LOCATION>"
@@ -73,7 +76,7 @@ with open(txt_filename, 'w') as txt_file:
     ranked_nfts = []
     regular_rank_counter = 2  # Start regular rankings from 2 (after '00001')
     
-    for rank, (nft_name, (trait_type, trait_value, _)) in enumerate(nft_rankings, start=1):
+    for rank, (nft_name, total_rarity_score, rarest_trait) in enumerate(nft_rankings, start=1):
         # Default to regular rank
         formatted_rank = f"{regular_rank_counter:05d}"
 
@@ -92,14 +95,19 @@ with open(txt_filename, 'w') as txt_file:
             ''
         )
         link = f"https://ordex.io/ethscription/{ethscription_id}"
-        ranked_nfts.append((formatted_rank, formatted_nft_name, trait_type, trait_value, link))
+
+        # Extract the rarest trait and its value
+        rarest_trait_type, rarest_trait_value, _ = rarest_trait
+
+        # Output the rarest trait (as requested)
+        ranked_nfts.append((formatted_rank, formatted_nft_name, rarest_trait_type, rarest_trait_value, link))
     
     # Sort NFTs by rank to ensure "00001" is at the top
     ranked_nfts.sort(key=lambda x: x[0])
 
     # Write the sorted NFTs to the file
-    for formatted_rank, formatted_nft_name, trait_type, trait_value, link in ranked_nfts:
-        text = f"Rank {formatted_rank} - {formatted_nft_name} | Rarest trait = {trait_type} - {trait_value} | Link: {link}\n"
+    for formatted_rank, formatted_nft_name, rarest_trait_type, rarest_trait_value, link in ranked_nfts:
+        text = f"Rank {formatted_rank} - {formatted_nft_name} | Rarest trait = {rarest_trait_type} - {rarest_trait_value} | Link: {link}\n"
         txt_file.write(text)
 
 # Step 8: Calculate and Print Rarity Scores for Traits
