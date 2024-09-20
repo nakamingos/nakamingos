@@ -26,9 +26,10 @@ for item in nft_data['collection_items']:
         if trait_type and trait_value and trait_type not in traits_to_exclude:
             trait_value_counts[(trait_type, trait_value)] += 1
 
-# Step 4: Calculate Trait Frequencies
-for (trait_type, trait_value), count in sorted(trait_value_counts.items(), key=lambda x: x[1]):
-    frequency_percentage = (count / total_items) * 100
+# Step 4: Calculate Rarity Score for Each Trait
+def calculate_rarity_score(trait_type, trait_value):
+    frequency = trait_value_counts[(trait_type, trait_value)]
+    return total_items / frequency  # Rarity Score formula
 
 # Step 5: Calculate Total Rarity Scores and Rankings
 nft_rankings = []
@@ -44,8 +45,7 @@ for nft in nft_data['collection_items']:
         if trait_type in traits_to_exclude or trait_type == 'rarity':  # Skip excluded traits
             continue
         
-        count = trait_value_counts[(trait_type, trait_value)]
-        rarity_score = 1 / (count / total_items)
+        rarity_score = calculate_rarity_score(trait_type, trait_value)
         total_rarity_score += rarity_score  # Sum all trait rarity scores for the NFT
         rarity_scores.append((trait_type, trait_value, rarity_score))  # Store for later
 
@@ -119,7 +119,7 @@ for trait, count in sorted(trait_value_counts.items(), key=lambda x: (x[1] / tot
     if trait_type == 'rarity' or trait_type in traits_to_exclude:
         continue
     
-    rarity_score = 1 / (count / total_items)
+    rarity_score = calculate_rarity_score(trait_type, trait_value)
     frequency = count
     
     print(f"{trait_type} - {trait_value} | rarity score = {rarity_score:.2f} | frequency = {frequency} / 20,000")
