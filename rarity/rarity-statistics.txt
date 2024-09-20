@@ -1,0 +1,275 @@
+-------------------------------------------------------------
+Rarity Scores for Traits (sorted by most rare to least rare):
+-------------------------------------------------------------
+Type - GoldSkele | rarity score = 14438.00 | frequency = 1 / 20,000
+Background - Matrix | rarity score = 14438.00 | frequency = 1 / 20,000
+Featured Artist - Chris Torres | rarity score = 14438.00 | frequency = 1 / 20,000
+Featured Artist - Doomscroller | rarity score = 14438.00 | frequency = 1 / 20,000
+Shirt/Jacket - BBall - Dippy | rarity score = 14438.00 | frequency = 1 / 20,000
+Featured Artist - Ariana | rarity score = 14438.00 | frequency = 1 / 20,000
+Featured Artist - UNO8 | rarity score = 14438.00 | frequency = 1 / 20,000
+Featured Artist - Mike Mongo | rarity score = 14438.00 | frequency = 1 / 20,000
+Featured Artist - undertow | rarity score = 14438.00 | frequency = 1 / 20,000
+Vest/Armor - Caution Tape | rarity score = 7219.00 | frequency = 2 / 20,000
+Featured Artist - NVMD | rarity score = 7219.00 | frequency = 2 / 20,000
+Type - Alien | rarity score = 4812.67 | frequency = 3 / 20,000
+Shirt/Jacket - BBall - Z | rarity score = 4812.67 | frequency = 3 / 20,000
+Vest/Armor - Spartan Armor | rarity score = 4812.67 | frequency = 3 / 20,000
+Shirt/Jacket - BBall - Ice | rarity score = 3609.50 | frequency = 4 / 20,000
+Vest/Armor - Lifesaver | rarity score = 3609.50 | frequency = 4 / 20,000
+Mask - DOOM | rarity score = 2887.60 | frequency = 5 / 20,000
+Type - ShadowMander | rarity score = 2887.60 | frequency = 5 / 20,000
+Background - Burrr | rarity score = 2887.60 | frequency = 5 / 20,000
+Mouth - Alligator Gold | rarity score = 2406.33 | frequency = 6 / 20,000
+Shirt/Jacket - BBall - Trust | rarity score = 2406.33 | frequency = 6 / 20,000
+Type - Jet Head | rarity score = 2406.33 | frequency = 6 / 20,000
+Shirt/Jacket - Long Sleeve V Natural | rarity score = 2062.57 | frequency = 7 / 20,000
+Shirt/Jacket - BBall - Taco | rarity score = 2062.57 | frequency = 7 / 20,000
+Cape - Royal Purple | rarity score = 2062.57 | frequency = 7 / 20,000
+Mouth - Alligator Gold Cap | rarity score = 2062.57 | frequency = 7 / 20,000
+Shirt/Jacket - Tie-dye | rarity score = 1804.75 | frequency = 8 / 20,000
+Vest/Armor - Warp Blue | rarity score = 1804.75 | frequency = 8 / 20,000
+Hat/Helmet - Crown | rarity score = 1804.75 | frequency = 8 / 20,000
+Vest/Armor - Warp Gold | rarity score = 1804.75 | frequency = 8 / 20,000
+Background - Heli | rarity score = 1804.75 | frequency = 8 / 20,000
+Glasses - Rainbow Nyaouns | rarity score = 1604.22 | frequency = 9 / 20,000
+Ninja Outfit - Crimson | rarity score = 1443.80 | frequency = 10 / 20,000
+Mask - Plague | rarity score = 1312.55 | frequency = 11 / 20,000
+Vest/Armor - Safety Vest | rarity score = 1312.55 | frequency = 11 / 20,000
+Tie - Purple | rarity score = 1203.17 | frequency = 12 / 20,000
+Tie - Bowtie Gold | rarity score = 1110.62 | frequency = 13 / 20,000
+Vest/Armor - Warp Steel | rarity score = 1110.62 | frequency = 13 / 20,000
+Background - Lava | rarity score = 1110.62 | frequency = 13 / 20,000
+Type - Skele | rarity score = 1031.29 | frequency = 14 / 20,000
+Mask - Wrestler Blue | rarity score = 1031.29 | frequency = 14 / 20,000
+Background - Win95 | rarity score = 1031.29 | frequency = 14 / 20,000
+Vest/Armor - Warp Copper | rarity score = 962.53 | frequency = 15 / 20,000
+Vest/Armor - Knight Armor | rarity score = 902.37 | frequency = 16 / 20,000
+Tie - Checkered | rarity score = 902.37 | frequency = 16 / 20,000
+Mask - Wrestler Green | rarity score = 902.37 | frequency = 16 / 20,000
+Hair - Clown Green | rarity score = 902.37 | frequency = 16 / 20,000
+Hat/Helmet - Hard Hat | rarity score = 849.29 | frequency = 17 / 20,000
+Hat/Helmet - Spartan Helmet | rarity score = 802.11 | frequency = 18 / 20,000
+Mouth - Salamander Gold | rarity score = 721.90 | frequency = 20 / 20,000
+Hat/Helmet - Energy Dome 2004 | rarity score = 721.90 | frequency = 20 / 20,000
+Hat/Helmet - Racer Yellow | rarity score = 687.52 | frequency = 21 / 20,000
+Type - Zomingo | rarity score = 627.74 | frequency = 23 / 20,000
+Vest/Armor - Burrr Scarf | rarity score = 627.74 | frequency = 23 / 20,000
+Tie - Blue | rarity score = 627.74 | frequency = 23 / 20,000
+Glasses - Purp Shades | rarity score = 601.58 | frequency = 24 / 20,000
+Background - Moon | rarity score = 577.52 | frequency = 25 / 20,000
+Glasses - NakaMongos | rarity score = 555.31 | frequency = 26 / 20,000
+Cape - Royal Red | rarity score = 534.74 | frequency = 27 / 20,000
+Vest/Armor - VC Vest | rarity score = 534.74 | frequency = 27 / 20,000
+Headband - Cobra | rarity score = 481.27 | frequency = 30 / 20,000
+Vest/Armor - Warp Pipe | rarity score = 481.27 | frequency = 30 / 20,000
+Background - Space | rarity score = 481.27 | frequency = 30 / 20,000
+Hat/Helmet - LL Bucket | rarity score = 481.27 | frequency = 30 / 20,000
+Shirt/Jacket - Rasta | rarity score = 465.74 | frequency = 31 / 20,000
+Hat/Helmet - Racer Red | rarity score = 451.19 | frequency = 32 / 20,000
+Hat/Helmet - FB Helmet Olive | rarity score = 451.19 | frequency = 32 / 20,000
+Cape - Superhero | rarity score = 437.52 | frequency = 33 / 20,000
+Vest/Armor - Life Vest | rarity score = 437.52 | frequency = 33 / 20,000
+Chain - Gold Mingoneck | rarity score = 424.65 | frequency = 34 / 20,000
+Hat/Helmet - FB Helmet Orange | rarity score = 412.51 | frequency = 35 / 20,000
+Hat/Helmet - Backwards Cap Leather | rarity score = 412.51 | frequency = 35 / 20,000
+Hat/Helmet - Knight Helmet | rarity score = 401.06 | frequency = 36 / 20,000
+Shirt/Jacket - Tubesock - Lakers | rarity score = 390.22 | frequency = 37 / 20,000
+Hat/Helmet - Trashcan Lid | rarity score = 390.22 | frequency = 37 / 20,000
+Vest/Armor - Tiny Trashcan | rarity score = 379.95 | frequency = 38 / 20,000
+Ninja Outfit - Snow | rarity score = 370.21 | frequency = 39 / 20,000
+Hat/Helmet - Top Hat | rarity score = 343.76 | frequency = 42 / 20,000
+Hat/Helmet - Coonskin Cap | rarity score = 320.84 | frequency = 45 / 20,000
+Background - Scribe | rarity score = 320.84 | frequency = 45 / 20,000
+Shirt/Jacket - Big Small Sweater | rarity score = 320.84 | frequency = 45 / 20,000
+Hat/Helmet - Racer Orange | rarity score = 313.87 | frequency = 46 / 20,000
+Hat/Helmet - Cowboy | rarity score = 313.87 | frequency = 46 / 20,000
+Hat/Helmet - FB Helmet Blue | rarity score = 300.79 | frequency = 48 / 20,000
+Hat/Helmet - Energy Dome 1980 | rarity score = 294.65 | frequency = 49 / 20,000
+Facial - Sad Bird | rarity score = 277.65 | frequency = 52 / 20,000
+Hat/Helmet - FB Helmet Red | rarity score = 262.51 | frequency = 55 / 20,000
+Shirt/Jacket - Football - Sheriff | rarity score = 257.82 | frequency = 56 / 20,000
+Headband - Gold | rarity score = 248.93 | frequency = 58 / 20,000
+Shirt/Jacket - Racing Jacket | rarity score = 248.93 | frequency = 58 / 20,000
+Shirt/Jacket - Hoodie | rarity score = 240.63 | frequency = 60 / 20,000
+Shirt/Jacket - Breakdancer LL | rarity score = 240.63 | frequency = 60 / 20,000
+Shirt/Jacket - Tubesock - 'Murica | rarity score = 240.63 | frequency = 60 / 20,000
+Hat/Helmet - FB Helmet Green | rarity score = 236.69 | frequency = 61 / 20,000
+Type - DarkSkele | rarity score = 232.87 | frequency = 62 / 20,000
+Hat/Helmet - Backwards Cap Fly | rarity score = 232.87 | frequency = 62 / 20,000
+Hat/Helmet - Space Helmet | rarity score = 215.49 | frequency = 67 / 20,000
+Background - Punk | rarity score = 212.32 | frequency = 68 / 20,000
+Shirt/Jacket - Football - Bonk | rarity score = 206.26 | frequency = 70 / 20,000
+Headband - Rude | rarity score = 203.35 | frequency = 71 / 20,000
+Shirt/Jacket - Long Sleeve Pink | rarity score = 197.78 | frequency = 73 / 20,000
+Headphones - Red | rarity score = 187.51 | frequency = 77 / 20,000
+Shirt/Jacket - Mingoneck Black | rarity score = 185.10 | frequency = 78 / 20,000
+Balloon - Green | rarity score = 182.76 | frequency = 79 / 20,000
+Shirt/Jacket - Tubesock - Hawks | rarity score = 182.76 | frequency = 79 / 20,000
+Background - cc0 Sunset | rarity score = 178.25 | frequency = 81 / 20,000
+Background - Havana | rarity score = 178.25 | frequency = 81 / 20,000
+Shirt/Jacket - Bill Jacket | rarity score = 173.95 | frequency = 83 / 20,000
+Headphones - Gold | rarity score = 173.95 | frequency = 83 / 20,000
+Shirt/Jacket - Cobra Top | rarity score = 167.88 | frequency = 86 / 20,000
+Type - Stork | rarity score = 164.07 | frequency = 88 / 20,000
+Background - This Is Fine | rarity score = 164.07 | frequency = 88 / 20,000
+Background - Nerd | rarity score = 164.07 | frequency = 88 / 20,000
+Shirt/Jacket - Bobsled Jacket | rarity score = 162.22 | frequency = 89 / 20,000
+Hat/Helmet - Lumberjack Hat | rarity score = 158.66 | frequency = 91 / 20,000
+Background - Purps | rarity score = 158.66 | frequency = 91 / 20,000
+Shirt/Jacket - Toga | rarity score = 156.93 | frequency = 92 / 20,000
+Chain - Gold Short | rarity score = 156.93 | frequency = 92 / 20,000
+Hat/Helmet - Baseball Cap Purple | rarity score = 155.25 | frequency = 93 / 20,000
+Balloon - Purple | rarity score = 151.98 | frequency = 95 / 20,000
+Hat/Helmet - Knit Yellow | rarity score = 150.40 | frequency = 96 / 20,000
+Shirt/Jacket - Puffy Coat Pink | rarity score = 148.85 | frequency = 97 / 20,000
+Balloon - Yellow | rarity score = 148.85 | frequency = 97 / 20,000
+Shirt/Jacket - Cool G Sweater | rarity score = 147.33 | frequency = 98 / 20,000
+Shirt/Jacket - Scrubs | rarity score = 147.33 | frequency = 98 / 20,000
+Background - Gruff | rarity score = 145.84 | frequency = 99 / 20,000
+Shirt/Jacket - Fancy Flannel | rarity score = 145.84 | frequency = 99 / 20,000
+Balloon - Blue | rarity score = 144.38 | frequency = 100 / 20,000
+Hat/Helmet - Bucket Hat Teal | rarity score = 144.38 | frequency = 100 / 20,000
+Shirt/Jacket - Tubesock - Cavaliers | rarity score = 144.38 | frequency = 100 / 20,000
+Hair - White Shag | rarity score = 140.17 | frequency = 103 / 20,000
+Headband - Dojo | rarity score = 137.50 | frequency = 105 / 20,000
+Hair - Karen Cut | rarity score = 136.21 | frequency = 106 / 20,000
+Shirt/Jacket - Faux Shearling | rarity score = 134.93 | frequency = 107 / 20,000
+Headphones - Purple | rarity score = 134.93 | frequency = 107 / 20,000
+Shirt/Jacket - Breakdancer DMC | rarity score = 132.46 | frequency = 109 / 20,000
+Ninja Outfit - Midnight | rarity score = 132.46 | frequency = 109 / 20,000
+Hair - Messy Purps | rarity score = 132.46 | frequency = 109 / 20,000
+Shirt/Jacket - Tux | rarity score = 128.91 | frequency = 112 / 20,000
+Shirt/Jacket - Granddad Sweater | rarity score = 128.91 | frequency = 112 / 20,000
+Shirt/Jacket - Varsity Burgundy | rarity score = 128.91 | frequency = 112 / 20,000
+Hair - Clown Rainbow | rarity score = 127.77 | frequency = 113 / 20,000
+Hat/Helmet - Backwards Cap Purple | rarity score = 124.47 | frequency = 116 / 20,000
+Shirt/Jacket - Hef Robe | rarity score = 123.40 | frequency = 117 / 20,000
+Hat/Helmet - Knit Orange | rarity score = 123.40 | frequency = 117 / 20,000
+Headband - Purple | rarity score = 123.40 | frequency = 117 / 20,000
+Glasses - Eye Mask | rarity score = 122.36 | frequency = 118 / 20,000
+Shirt/Jacket - Faux Fur | rarity score = 122.36 | frequency = 118 / 20,000
+Shirt/Jacket - Football - Cheese Head | rarity score = 122.36 | frequency = 118 / 20,000
+Shirt/Jacket - Satin Gold Jacket | rarity score = 121.33 | frequency = 119 / 20,000
+Shirt/Jacket - Moto Jacket Red | rarity score = 121.33 | frequency = 119 / 20,000
+Hair - Ponytail | rarity score = 120.32 | frequency = 120 / 20,000
+Shirt/Jacket - Faux Diplomat | rarity score = 120.32 | frequency = 120 / 20,000
+Hat/Helmet - Knit White | rarity score = 117.38 | frequency = 123 / 20,000
+Hair - Ponytail Pink | rarity score = 116.44 | frequency = 124 / 20,000
+Background - BSOD | rarity score = 116.44 | frequency = 124 / 20,000
+Hat/Helmet - Baseball Cap Navy | rarity score = 115.50 | frequency = 125 / 20,000
+Hat/Helmet - Baseball Cap White | rarity score = 113.69 | frequency = 127 / 20,000
+Chain - Medallion | rarity score = 111.06 | frequency = 130 / 20,000
+Shirt/Jacket - Varsity Green | rarity score = 108.56 | frequency = 133 / 20,000
+Shirt/Jacket - Dojo Top | rarity score = 107.75 | frequency = 134 / 20,000
+Hat/Helmet - Bucket Hat Purple | rarity score = 106.95 | frequency = 135 / 20,000
+Shirt/Jacket - Blocky Sweater | rarity score = 106.95 | frequency = 135 / 20,000
+Hair - Long Pink | rarity score = 105.39 | frequency = 137 / 20,000
+Type - Darkness | rarity score = 104.62 | frequency = 138 / 20,000
+Headband - Green | rarity score = 103.87 | frequency = 139 / 20,000
+Hat/Helmet - Knit Purple | rarity score = 98.89 | frequency = 146 / 20,000
+Shirt/Jacket - Football - Island | rarity score = 94.99 | frequency = 152 / 20,000
+Shirt/Jacket - Tennis Sweater | rarity score = 94.99 | frequency = 152 / 20,000
+Shirt/Jacket - Varsity Purple | rarity score = 92.55 | frequency = 156 / 20,000
+Shirt/Jacket - Football - Duke | rarity score = 92.55 | frequency = 156 / 20,000
+Shirt/Jacket - Football - Kneel | rarity score = 91.96 | frequency = 157 / 20,000
+Shirt/Jacket - Argyle Sweater | rarity score = 89.68 | frequency = 161 / 20,000
+Shirt/Jacket - Jersey - Sammy D | rarity score = 89.68 | frequency = 161 / 20,000
+Type - Alligator | rarity score = 88.58 | frequency = 163 / 20,000
+Shirt/Jacket - Long Sleeve V Blue | rarity score = 88.04 | frequency = 164 / 20,000
+Shirt/Jacket - Work Jacket | rarity score = 86.98 | frequency = 166 / 20,000
+Hair - Long Ginger | rarity score = 85.94 | frequency = 168 / 20,000
+Shirt/Jacket - Breakdancer Double Red | rarity score = 84.43 | frequency = 171 / 20,000
+Shirt/Jacket - Ribbed Sweater | rarity score = 84.43 | frequency = 171 / 20,000
+Shirt/Jacket - Vintage Track Jacket | rarity score = 84.43 | frequency = 171 / 20,000
+Background - Garry | rarity score = 84.43 | frequency = 171 / 20,000
+Shirt/Jacket - Desert Camo | rarity score = 83.94 | frequency = 172 / 20,000
+Hair - Dreads Short | rarity score = 83.94 | frequency = 172 / 20,000
+Shirt/Jacket - Football - Megatron | rarity score = 82.98 | frequency = 174 / 20,000
+Shirt/Jacket - Long Sleeve Olive | rarity score = 82.03 | frequency = 176 / 20,000
+Headband - Blue | rarity score = 81.57 | frequency = 177 / 20,000
+Hair - Ponytail Ginger | rarity score = 81.11 | frequency = 178 / 20,000
+Shirt/Jacket - Puffy Coat Yellow | rarity score = 80.66 | frequency = 179 / 20,000
+Shirt/Jacket - Long Sleeve Grey | rarity score = 78.90 | frequency = 183 / 20,000
+Hat/Helmet - Knit Royal | rarity score = 78.04 | frequency = 185 / 20,000
+Glasses - Monocle | rarity score = 77.21 | frequency = 187 / 20,000
+Hair - Frump | rarity score = 76.39 | frequency = 189 / 20,000
+Shirt/Jacket - Long Sleeve Deep V | rarity score = 75.59 | frequency = 191 / 20,000
+Shirt/Jacket - Mingoneck Aqua | rarity score = 75.20 | frequency = 192 / 20,000
+Hat/Helmet - Bucket Hat White | rarity score = 74.81 | frequency = 193 / 20,000
+Shirt/Jacket - Moto Jacket Black | rarity score = 74.42 | frequency = 194 / 20,000
+Shirt/Jacket - Breakdancer Elite | rarity score = 71.48 | frequency = 202 / 20,000
+Headphones - Blue | rarity score = 71.48 | frequency = 202 / 20,000
+Smoke - Clove | rarity score = 70.43 | frequency = 205 / 20,000
+Shirt/Jacket - Varsity Blue | rarity score = 68.43 | frequency = 211 / 20,000
+Headband - Rainbow | rarity score = 68.10 | frequency = 212 / 20,000
+Origin - Clone | rarity score = 67.78 | frequency = 213 / 20,000
+Headphones - Black | rarity score = 66.53 | frequency = 217 / 20,000
+Balloon - Orange | rarity score = 66.23 | frequency = 218 / 20,000
+Type - Robomingo | rarity score = 65.33 | frequency = 221 / 20,000
+Shirt/Jacket - Camo Jacket | rarity score = 65.33 | frequency = 221 / 20,000
+Shirt/Jacket - Spacesuit | rarity score = 64.74 | frequency = 223 / 20,000
+Hair - Dreads Long | rarity score = 64.74 | frequency = 223 / 20,000
+Glasses - Nerd Glasses | rarity score = 64.46 | frequency = 224 / 20,000
+Shirt/Jacket - Puffy Coat Orange | rarity score = 63.88 | frequency = 226 / 20,000
+Shirt/Jacket - Long Sleeve V Pink | rarity score = 62.50 | frequency = 231 / 20,000
+Shirt/Jacket - Mingoneck White | rarity score = 62.50 | frequency = 231 / 20,000
+Shirt/Jacket - Lumberjack Flannel | rarity score = 61.44 | frequency = 235 / 20,000
+Shirt/Jacket - Dress Shirt Pink | rarity score = 57.29 | frequency = 252 / 20,000
+Shirt/Jacket - Breakdancer Blue | rarity score = 56.18 | frequency = 257 / 20,000
+Shirt/Jacket - Pajamas | rarity score = 54.90 | frequency = 263 / 20,000
+Shirt/Jacket - Puffy Coat Green | rarity score = 54.90 | frequency = 263 / 20,000
+Hair - Flat Top | rarity score = 54.90 | frequency = 263 / 20,000
+Glasses - VR Blue | rarity score = 54.28 | frequency = 266 / 20,000
+Shirt/Jacket - Puffy Coat Red | rarity score = 52.50 | frequency = 275 / 20,000
+Shirt/Jacket - Moto Jacket Yellow | rarity score = 52.12 | frequency = 277 / 20,000
+Shirt/Jacket - Bathrobe | rarity score = 52.12 | frequency = 277 / 20,000
+Shirt/Jacket - Long Sleeve V Aqua | rarity score = 51.94 | frequency = 278 / 20,000
+Shirt/Jacket - Long Sleeve V Red | rarity score = 51.75 | frequency = 279 / 20,000
+Shirt/Jacket - French Navy Sweater | rarity score = 49.62 | frequency = 291 / 20,000
+Shirt/Jacket - Tie-Dye | rarity score = 49.28 | frequency = 293 / 20,000
+Shirt/Jacket - Blue Flannel | rarity score = 48.78 | frequency = 296 / 20,000
+Glasses - Dark Brandon | rarity score = 48.29 | frequency = 299 / 20,000
+Shirt/Jacket - Long Sleeve Natural | rarity score = 47.34 | frequency = 305 / 20,000
+Shirt/Jacket - Puffy Coat Blue | rarity score = 45.83 | frequency = 315 / 20,000
+Shirt/Jacket - Hawaiian | rarity score = 45.55 | frequency = 317 / 20,000
+Type - Salamander | rarity score = 45.12 | frequency = 320 / 20,000
+Hat/Helmet - Backwards Cap Olive | rarity score = 42.84 | frequency = 337 / 20,000
+Shirt/Jacket - Long Sleeve White | rarity score = 42.59 | frequency = 339 / 20,000
+Hair - Long Blonde | rarity score = 42.46 | frequency = 340 / 20,000
+Glasses - Classic Shades | rarity score = 42.34 | frequency = 341 / 20,000
+Glasses - Purp Nerd | rarity score = 40.11 | frequency = 360 / 20,000
+Facial - Shadow Beard | rarity score = 39.88 | frequency = 362 / 20,000
+Balloon - Red | rarity score = 38.60 | frequency = 374 / 20,000
+Hair - Afro | rarity score = 37.60 | frequency = 384 / 20,000
+Glasses - Pit Vipers | rarity score = 36.83 | frequency = 392 / 20,000
+Hat/Helmet - Baseball Cap Black | rarity score = 36.28 | frequency = 398 / 20,000
+Hair - Ponytail Blonde | rarity score = 36.19 | frequency = 399 / 20,000
+Glasses - Havana Shades | rarity score = 35.21 | frequency = 410 / 20,000
+Shirt/Jacket - Dress Shirt White | rarity score = 34.21 | frequency = 422 / 20,000
+Glasses - VR Red | rarity score = 34.13 | frequency = 423 / 20,000
+Hair - Shaggy | rarity score = 33.34 | frequency = 433 / 20,000
+Shirt/Jacket - Dress Shirt Blue | rarity score = 32.37 | frequency = 446 / 20,000
+Type - ShadowMingo | rarity score = 31.80 | frequency = 454 / 20,000
+Headphones - Gaming Headset | rarity score = 31.18 | frequency = 463 / 20,000
+Facial - Rainbow Vomit | rarity score = 30.40 | frequency = 475 / 20,000
+Hat/Helmet - Backwards Cap Black | rarity score = 29.23 | frequency = 494 / 20,000
+Smoke - Pipe | rarity score = 28.25 | frequency = 511 / 20,000
+Glasses - Noggles | rarity score = 25.15 | frequency = 574 / 20,000
+Hat/Helmet - Backwards Cap White | rarity score = 23.10 | frequency = 625 / 20,000
+Hat/Helmet - Backwards Cap Red | rarity score = 21.17 | frequency = 682 / 20,000
+Facial - Epic Beard | rarity score = 20.92 | frequency = 690 / 20,000
+Hat/Helmet - Backwards Cap Blue | rarity score = 20.89 | frequency = 691 / 20,000
+Glasses - 3D Glasses | rarity score = 19.00 | frequency = 760 / 20,000
+Type - Invisimingo | rarity score = 18.63 | frequency = 775 / 20,000
+Smoke - Cig | rarity score = 18.53 | frequency = 779 / 20,000
+Chain - Gold | rarity score = 17.74 | frequency = 814 / 20,000
+Mouth - Beak Gold | rarity score = 17.35 | frequency = 832 / 20,000
+Hair - Long Black | rarity score = 17.01 | frequency = 849 / 20,000
+Type - Mingo Crab | rarity score = 14.81 | frequency = 975 / 20,000
+Type - Mingo Gruff | rarity score = 12.88 | frequency = 1121 / 20,000
+Facial - Solid Beard | rarity score = 12.38 | frequency = 1166 / 20,000
+Type - Mingo Mollusk | rarity score = 6.85 | frequency = 2109 / 20,000
+Type - Mingo Barbie | rarity score = 4.68 | frequency = 3084 / 20,000
+Origin - Art Drop | rarity score = 3.87 | frequency = 3729 / 20,000
+Type - Mingo Shrimp | rarity score = 2.97 | frequency = 4868 / 20,000
