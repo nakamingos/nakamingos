@@ -5,7 +5,7 @@ import sys
 from collections import defaultdict
 
 # Interactive file input with smart path resolution
-raw_input_path = input("Enter path to Nakamingos metadata JSON file: ").strip()
+raw_input_path = input("Enter path to metadata JSON file: ").strip()
 expanded_path = os.path.expanduser(raw_input_path)
 abs_path = os.path.abspath(expanded_path)
 
@@ -81,11 +81,9 @@ if not items:
 
 total_retrieved = len(items)
 
-# Nakamingos-specific validation
-if total_retrieved == 20000:
-    print(f"Retrieved 20,000 Nakamingos. Version: new{new_json_ver}\nCalculating rarity...")
-else:
-    print(f"Retrieved {total_retrieved} Nakamingos (collection may be partially minted). Version: new{new_json_ver}\nCalculating rarity...")
+# Collection size validation
+if total_retrieved > 0:
+    print(f"Retrieved {total_retrieved} items. Version: new{new_json_ver}\nCalculating rarity...")
 
 # Step 3: Calculate Trait Value Frequencies (excluding Featured Artist traits)
 trait_value_counts = defaultdict(int)
@@ -98,10 +96,10 @@ for item in items:
     for attr in item.get('item_attributes', []):
         trait_type = attr.get('trait_type')  # Ensure 'trait_type' exists
         trait_value = attr.get('value')      # Ensure 'value' exists
-        # Skip Featured Artist trait type to avoid inflating rarity scores
+        # Skip Featured Artist trait type and metadata traits to avoid inflating rarity scores
         if (trait_type and trait_value and 
             trait_type not in traits_to_exclude and 
-            trait_type.lower() != 'rarity' and 
+            trait_type.lower() not in ['rarity', 'rank'] and 
             trait_type != 'Featured Artist'):
             trait_value_counts[(trait_type, trait_value)] += 1
 
@@ -129,9 +127,9 @@ for nft in items:
     for trait in nft_traits:
         trait_type = trait.get('trait_type')  # Ensure 'trait_type' exists
         trait_value = trait.get('value')      # Ensure 'value' exists
-        # Skip excluded traits and Featured Artist traits in scoring
+        # Skip excluded traits, metadata traits and Featured Artist traits in scoring
         if (trait_type in traits_to_exclude or 
-            trait_type.lower() == 'rarity' or 
+            trait_type.lower() in ['rarity', 'rank'] or 
             trait_type == 'Featured Artist'):  
             continue
         
@@ -165,33 +163,56 @@ for item in items:
     if is_featured_artist(item):
         featured_artist_ids.add(item.get('ethscription_id', item.get('id', '')))
 
-# Assign ranks with Featured Artist logic
+# Assign ranks based on whether Featured Artists exist
 ranked_nfts = []
 ranks = {}
-regular_rank_counter = 2  # Start regular rankings from 2 (after '00001')
+has_featured_artists = len(featured_artist_ids) > 0
+regular_rank_counter = 2 if has_featured_artists else 1  # Start from 1 if no Featured Artists
 
-# First assign rank 1 to all Featured Artists
+# First assign rank 1 to Featured Artists if they exist
 for item_id in featured_artist_ids:
     ranks[item_id] = 1
 
 for rank, (nft_name, total_rarity_score, rarest_trait, nft_item) in enumerate(nft_rankings, start=1):
+    # Calculate the number of digits needed based on collection size
+    num_digits = len(str(total_items))
+    
     # Check if the current NFT is a Featured Artist
     if is_featured_artist(nft_item):
         formatted_rank = 1
-        rank_str = "00001"
+        rank_str = "1".zfill(num_digits)  # Pad with correct number of zeros
     else:
-        formatted_rank = regular_rank_counter
-        rank_str = f"{regular_rank_counter:05d}"
-        regular_rank_counter += 1  # Increment for regular ranks
+        if has_featured_artists:
+            # If we have Featured Artists, start regular items at 2
+            formatted_rank = regular_rank_counter
+            rank_str = str(regular_rank_counter).zfill(num_digits)
+            regular_rank_counter += 1
+        else:
+            # If no Featured Artists, use sequential ranking starting at 1
+            formatted_rank = rank
+            rank_str = str(rank).zfill(num_digits)
 
     # Store rank for metadata updating (Featured Artists already have rank 1)
     ethscription_id = nft_item.get('ethscription_id', nft_item.get('id', ''))
     if ethscription_id not in featured_artist_ids:
         ranks[ethscription_id] = formatted_rank
 
-    # Extract Nakamingo number from the NFT name (e.g., Nakamingo #1234)
-    nakamingo_number = int(nft_name.split("#")[1])  # Get the number part
-    formatted_nft_name = f"Nakamingo #{nakamingo_number:05d}"  # Add leading zeros
+    # Calculate the number of digits needed based on collection size
+    num_digits = len(str(total_items))
+    
+    # Extract the base name and number from the NFT name (e.g., "Nakamingo #1234" or "DarkNezz #123")
+    name_parts = nft_name.split("#")
+    if len(name_parts) == 2:
+        base_name = name_parts[0].strip()
+        try:
+            number = int(name_parts[1])
+            formatted_nft_name = f"{base_name} #{number:0{num_digits}d}"
+        except ValueError:
+            # If we can't parse the number, use the original name
+            formatted_nft_name = nft_name
+    else:
+        # If the name doesn't follow the "#" format, use it as is
+        formatted_nft_name = nft_name
 
     link = f"https://ethscriptions.com/ethscriptions/{ethscription_id}"
 
@@ -217,6 +238,11 @@ for item in items:
     if rank_val is None:
         continue
     
+    # Remove any existing rank trait
+    item['item_attributes'] = [attr for attr in item.get('item_attributes', []) 
+                             if attr.get('trait_type', '').lower() != 'rank']
+    
+    # Update or add rarity trait
     updated = False
     for attr in item.get('item_attributes', []):
         if attr.get('trait_type', '').lower() == 'rarity':
@@ -271,18 +297,20 @@ for (trait_type, trait_value), count in featured_artist_traits.items():
 featured_entries.sort(key=lambda x: (total_items / x[1] if x[1] else 0), reverse=True)
 
 with open(output_stats, 'w', encoding='utf-8') as f:
-    f.write("-------------------------------------------------------------\n")
-    f.write("Rarity Scores for Traits (Featured Artist traits shown separately):\n")
-    f.write("-------------------------------------------------------------\n")
-    f.write("NOTE: Featured Artist traits are excluded from rarity calculations\n")
-    f.write("to prevent inflation of common trait rarity scores.\n\n")
-    
-    # Write Featured Artist traits first (for display only)
     if featured_entries:
+        f.write("-------------------------------------------------------------\n")
+        f.write("Rarity Scores for Traits (Featured Artist traits shown separately):\n")
+        f.write("-------------------------------------------------------------\n")
+        f.write("NOTE: Featured Artist traits are excluded from rarity calculations\n")
+        f.write("to prevent inflation of common trait rarity scores.\n\n")
         f.write("FEATURED ARTIST TRAITS (not included in rarity calculations):\n")
         for (trait_type, trait_value), count in featured_entries:
             f.write(f"{trait_type} - {trait_value} | frequency = {count} / {total_items} (excluded from scoring)\n")
         f.write("\nREGULAR TRAITS (used in rarity calculations):\n")
+    else:
+        f.write("-------------------------------------------------------------\n")
+        f.write("Rarity Scores for Traits:\n")
+        f.write("-------------------------------------------------------------\n")
     
     # Then regular traits (these are actually used in calculations)
     for (trait_type, trait_value), count in regular_trait_entries:
@@ -292,14 +320,15 @@ with open(output_stats, 'w', encoding='utf-8') as f:
 print(f"Wrote statistics to {output_stats}")
 
 print("\n-------------------------------------------------------------\nRarity Scores for Traits (sorted by most rare to least rare):\n-------------------------------------------------------------")
-print("NOTE: Featured Artist traits are excluded from calculations")
+if featured_entries:
+    print("NOTE: Featured Artist traits are excluded from calculations")
 for trait, count in sorted(trait_value_counts.items(), key=lambda x: (x[1] / total_items)):
     trait_type, trait_value = trait
     
     rarity_score = calculate_rarity_score(trait_type, trait_value)
     frequency = count
     
-    print(f"{trait_type} - {trait_value} | rarity score = {rarity_score:.2f} | frequency = {frequency} / 20,000")
+    print(f"{trait_type} - {trait_value} | rarity score = {rarity_score:.2f} | frequency = {frequency} / {total_items}")
     
 print("\nThe terminal output of this script is tracked as a text file here: https://github.com/nakamingos/nakamingos/blob/main/rarity/nakamingos-rarity-statistics.txt")
 print("\nThe full rankings text file that this script produces is tracked here: https://github.com/nakamingos/nakamingos/blob/main/rarity/nakamingos-rarity-rankings.txt")
