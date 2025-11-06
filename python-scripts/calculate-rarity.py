@@ -90,7 +90,7 @@ trait_value_counts = defaultdict(int)
 total_items = len(items)
 
 # Traits to filter out from the rarity calculations
-traits_to_exclude = {"Wisdom/Magic", "Power/Strength", "Speed/Agility"}
+traits_to_exclude = {"Wisdom/Magic", "Power/Strength", "Speed/Agility", "Origin"}
 
 for item in items:
     for attr in item.get('item_attributes', []):
@@ -238,20 +238,12 @@ for item in items:
     if rank_val is None:
         continue
     
-    # Remove any existing rank trait
+    # Remove any existing rank or rarity traits
     item['item_attributes'] = [attr for attr in item.get('item_attributes', []) 
-                             if attr.get('trait_type', '').lower() != 'rank']
+                             if attr.get('trait_type', '').lower() not in ['rank', 'rarity']]
     
-    # Update or add rarity trait
-    updated = False
-    for attr in item.get('item_attributes', []):
-        if attr.get('trait_type', '').lower() == 'rarity':
-            attr['value'] = rank_val
-            updated = True
-            break
-    
-    if not updated:
-        item.setdefault('item_attributes', []).append({'trait_type': 'Rarity', 'value': rank_val})
+    # Add new rank trait
+    item.setdefault('item_attributes', []).append({'trait_type': 'Rank', 'value': rank_val})
 
 # Write updated metadata
 with open(output_meta, 'w', encoding='utf-8') as f:
