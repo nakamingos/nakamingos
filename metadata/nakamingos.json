@@ -1,6 +1,5 @@
 {
   "name": "Nakamingos",
-  "should_renounce": false,
   "logo_image_uri": "esc://ethscriptions/0xa0538dcf9480aa05a8591a71fca2d2202900957feeb5029601ea5f7262a35827/data",
   "banner_image_uri": "esc://ethscriptions/0x9519efff046d8e02be2f1bd113c209928285bb538e4113eaa3d7ac4605a82b5c/data",
   "total_supply": 15000,
