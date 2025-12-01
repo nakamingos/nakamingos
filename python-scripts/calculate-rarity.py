@@ -33,6 +33,11 @@ rarity_dir = os.path.normpath(os.path.join(base_dir, '..', 'rarity'))
 os.makedirs(metadata_dir, exist_ok=True)
 os.makedirs(rarity_dir, exist_ok=True)
 
+# Helper function to handle different attribute field names
+def get_attributes(item):
+    """Get item attributes, handling both 'attributes' and 'item_attributes' field names."""
+    return item.get('item_attributes', item.get('attributes', []))
+
 # Versioning system function
 def next_version(dir_path, pattern):
     max_ver = 0
@@ -93,7 +98,7 @@ total_items = len(items)
 traits_to_exclude = {"Wisdom/Magic", "Power/Strength", "Speed/Agility", "Origin"}
 
 for item in items:
-    for attr in item.get('item_attributes', []):
+    for attr in get_attributes(item):
         trait_type = attr.get('trait_type')  # Ensure 'trait_type' exists
         trait_value = attr.get('value')      # Ensure 'value' exists
         # Skip Featured Artist trait type and metadata traits to avoid inflating rarity scores
@@ -112,7 +117,7 @@ def calculate_rarity_score(trait_type, trait_value):
 # Dynamically identify Featured Artists by their trait
 def is_featured_artist(item):
     """Check if an item is a Featured Artist based on its traits"""
-    for attr in item.get('item_attributes', []):
+    for attr in get_attributes(item):
         if attr.get('trait_type') == 'Featured Artist':
             return True
     return False
@@ -120,7 +125,7 @@ def is_featured_artist(item):
 nft_rankings = []
 
 for nft in items:
-    nft_traits = nft.get('item_attributes', [])
+    nft_traits = get_attributes(nft)
     total_rarity_score = 0  # Initialize total rarity score for the NFT
     rarity_scores = []  # Store rarity scores for each trait for later retrieval
 
@@ -145,7 +150,7 @@ for nft in items:
         # Featured Artists get added with special handling (they have no calculated rarity scores)
         # Find their Featured Artist trait to display as "rarest"
         featured_trait = None
-        for trait in nft_traits:
+        for trait in get_attributes(nft):
             if trait.get('trait_type') == 'Featured Artist':
                 featured_trait = ('Featured Artist', trait.get('value'), 999999)  # High dummy score for sorting
                 break
@@ -228,6 +233,7 @@ ranked_nfts.sort(key=lambda x: x[0])
 # Update metadata with rarity values
 for item in items:
     eid = item.get('ethscription_id', item.get('id'))
+    attrs_key = 'item_attributes' if 'item_attributes' in item else 'attributes'
     
     # Get rank - Featured Artists get rank 1, others get their calculated rank
     if is_featured_artist(item):
@@ -239,11 +245,11 @@ for item in items:
         continue
     
     # Remove any existing rank or rarity traits
-    item['item_attributes'] = [attr for attr in item.get('item_attributes', []) 
+    item[attrs_key] = [attr for attr in item.get(attrs_key, []) 
                              if attr.get('trait_type', '').lower() not in ['rank', 'rarity']]
     
     # Add new rank trait
-    item.setdefault('item_attributes', []).append({'trait_type': 'Rank', 'value': rank_val})
+    item.setdefault(attrs_key, []).append({'trait_type': 'Rank', 'value': rank_val})
 
 # Write updated metadata
 with open(output_meta, 'w', encoding='utf-8') as f:
@@ -262,7 +268,7 @@ print(f"Wrote rankings to {output_rank}")
 featured_artist_traits = defaultdict(int)
 
 for item in items:
-    for attr in item.get('item_attributes', []):
+    for attr in get_attributes(item):
         trait_type = attr.get('trait_type')
         trait_value = attr.get('value')
         
