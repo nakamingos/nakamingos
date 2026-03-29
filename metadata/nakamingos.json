@@ -609982,7 +609982,7 @@
           "value": 25
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Purps"
         }
       ]
@@ -610968,7 +610968,7 @@
           "value": 54
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Gruff"
         }
       ]
@@ -611090,7 +611090,7 @@
           "value": 83
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Lava"
         }
       ]
@@ -611430,7 +611430,7 @@
           "value": 21
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Win95"
         }
       ]
@@ -611980,7 +611980,7 @@
           "value": 61
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Purps"
         }
       ]
@@ -612418,7 +612418,7 @@
           "value": 38
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Punk"
         }
       ]
@@ -613090,7 +613090,7 @@
           "value": 37
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Gruff"
         }
       ]
@@ -613784,7 +613784,7 @@
           "value": 44
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Punk"
         }
       ]
@@ -613906,7 +613906,7 @@
           "value": 7
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "cc0 Sunset"
         }
       ]
@@ -614974,7 +614974,7 @@
           "value": 18
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Lava"
         }
       ]
@@ -615344,7 +615344,7 @@
           "value": 50
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Purps"
         }
       ]
@@ -615462,7 +615462,7 @@
           "value": 48
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Gruff"
         }
       ]
@@ -616172,7 +616172,7 @@
           "value": 28
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Win95"
         }
       ]
@@ -616454,7 +616454,7 @@
           "value": 20
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Havana"
         }
       ]
@@ -616496,7 +616496,7 @@
           "value": 85
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Lava"
         }
       ]
@@ -617438,7 +617438,7 @@
           "value": 10
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "cc0 Sunset"
         }
       ]
@@ -617648,7 +617648,7 @@
           "value": 47
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Gruff"
         }
       ]
@@ -617934,7 +617934,7 @@
           "value": 58
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Punk"
         }
       ]
@@ -618884,7 +618884,7 @@
           "value": 22
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Havana"
         }
       ]
@@ -619700,7 +619700,7 @@
           "value": 23
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Win95"
         }
       ]
@@ -621160,7 +621160,7 @@
           "value": 70
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Lava"
         }
       ]
@@ -621530,7 +621530,7 @@
           "value": 49
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Punk"
         }
       ]
@@ -621572,7 +621572,7 @@
           "value": 92
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Lava"
         }
       ]
@@ -621946,7 +621946,7 @@
           "value": 100
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Lava"
         }
       ]
@@ -624882,7 +624882,7 @@
           "value": 51
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Punk"
         }
       ]
@@ -625008,7 +625008,7 @@
           "value": 40
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Gruff"
         }
       ]
@@ -625272,7 +625272,7 @@
           "value": 46
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Purps"
         }
       ]
@@ -625780,7 +625780,7 @@
           "value": 24
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Havana"
         }
       ]
@@ -626028,7 +626028,7 @@
           "value": 65
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Lava"
         }
       ]
@@ -626306,7 +626306,7 @@
           "value": 9
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "cc0 Sunset"
         }
       ]
@@ -626504,7 +626504,7 @@
           "value": 41
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Purps"
         }
       ]
@@ -627698,7 +627698,7 @@
           "value": 26
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Havana"
         }
       ]
@@ -627740,7 +627740,7 @@
           "value": 30
         },
         {
-          "trait_type": "BG",
+          "trait_type": "Background",
           "value": "Win95"
         }
       ]
