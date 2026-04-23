@@ -24,24 +24,17 @@ Vest/Armor - Caution Tape | rarity score = 7500.00 | frequency = 2 / 15000
 Type - Alien | rarity score = 5000.00 | frequency = 3 / 15000
 Shirt/Jacket - BBall - Z | rarity score = 5000.00 | frequency = 3 / 15000
 Vest/Armor - Spartan Armor | rarity score = 5000.00 | frequency = 3 / 15000
-BG - cc0 Sunset | rarity score = 5000.00 | frequency = 3 / 15000
 Shirt/Jacket - BBall - Ice | rarity score = 3750.00 | frequency = 4 / 15000
 Vest/Armor - Lifesaver | rarity score = 3750.00 | frequency = 4 / 15000
-BG - Win95 | rarity score = 3750.00 | frequency = 4 / 15000
-BG - Havana | rarity score = 3750.00 | frequency = 4 / 15000
 Mask - DOOM | rarity score = 3000.00 | frequency = 5 / 15000
 Type - ShadowMander | rarity score = 3000.00 | frequency = 5 / 15000
 Background - Burrr | rarity score = 3000.00 | frequency = 5 / 15000
-BG - Purps | rarity score = 3000.00 | frequency = 5 / 15000
-BG - Gruff | rarity score = 3000.00 | frequency = 5 / 15000
-BG - Punk | rarity score = 3000.00 | frequency = 5 / 15000
 Mouth - Alligator Gold | rarity score = 2500.00 | frequency = 6 / 15000
 Shirt/Jacket - Long Sleeve V Natural | rarity score = 2142.86 | frequency = 7 / 15000
 Shirt/Jacket - BBall - Taco | rarity score = 2142.86 | frequency = 7 / 15000
 Shirt/Jacket - BBall - Trust | rarity score = 2142.86 | frequency = 7 / 15000
 Mouth - Alligator Gold Cap | rarity score = 2142.86 | frequency = 7 / 15000
 Type - Jet Head | rarity score = 2142.86 | frequency = 7 / 15000
-BG - Lava | rarity score = 2142.86 | frequency = 7 / 15000
 Shirt/Jacket - Tie-dye | rarity score = 1875.00 | frequency = 8 / 15000
 Vest/Armor - Warp Blue | rarity score = 1875.00 | frequency = 8 / 15000
 Hat/Helmet - Crown | rarity score = 1875.00 | frequency = 8 / 15000
@@ -55,17 +48,17 @@ Vest/Armor - Warp Steel | rarity score = 1153.85 | frequency = 13 / 15000
 Ninja Outfit - Crimson | rarity score = 1153.85 | frequency = 13 / 15000
 Type - Skele | rarity score = 1071.43 | frequency = 14 / 15000
 Vest/Armor - Safety Vest | rarity score = 1071.43 | frequency = 14 / 15000
-Background - Win95 | rarity score = 1071.43 | frequency = 14 / 15000
-Background - Lava | rarity score = 1071.43 | frequency = 14 / 15000
 Vest/Armor - Warp Copper | rarity score = 1000.00 | frequency = 15 / 15000
 Tie - Purple | rarity score = 1000.00 | frequency = 15 / 15000
 Mask - Wrestler Green | rarity score = 937.50 | frequency = 16 / 15000
 Hat/Helmet - Spartan Helmet | rarity score = 833.33 | frequency = 18 / 15000
+Background - Win95 | rarity score = 833.33 | frequency = 18 / 15000
 Vest/Armor - Knight Armor | rarity score = 750.00 | frequency = 20 / 15000
 Mouth - Salamander Gold | rarity score = 750.00 | frequency = 20 / 15000
 Mask - Wrestler Blue | rarity score = 750.00 | frequency = 20 / 15000
 Hat/Helmet - Energy Dome 2004 | rarity score = 714.29 | frequency = 21 / 15000
 Tie - Checkered | rarity score = 714.29 | frequency = 21 / 15000
+Background - Lava | rarity score = 714.29 | frequency = 21 / 15000
 Type - Zomingo | rarity score = 652.17 | frequency = 23 / 15000
 Glasses - Purp Shades | rarity score = 625.00 | frequency = 24 / 15000
 Hair - Clown Green | rarity score = 600.00 | frequency = 25 / 15000
@@ -110,39 +103,39 @@ Hat/Helmet - FB Helmet Green | rarity score = 234.38 | frequency = 64 / 15000
 Shirt/Jacket - Tubesock - 'Murica | rarity score = 227.27 | frequency = 66 / 15000
 Facial - Sad Bird | rarity score = 227.27 | frequency = 66 / 15000
 Hat/Helmet - Backwards Cap Fly | rarity score = 223.88 | frequency = 67 / 15000
-Background - Punk | rarity score = 220.59 | frequency = 68 / 15000
 Shirt/Jacket - Football - Bonk | rarity score = 214.29 | frequency = 70 / 15000
 Headband - Gold | rarity score = 211.27 | frequency = 71 / 15000
 Headband - Rude | rarity score = 211.27 | frequency = 71 / 15000
 Shirt/Jacket - Long Sleeve Pink | rarity score = 205.48 | frequency = 73 / 15000
+Background - Punk | rarity score = 205.48 | frequency = 73 / 15000
 Hat/Helmet - Space Helmet | rarity score = 200.00 | frequency = 75 / 15000
 Headphones - Red | rarity score = 194.81 | frequency = 77 / 15000
 Balloon - Green | rarity score = 189.87 | frequency = 79 / 15000
 Shirt/Jacket - Tubesock - Hawks | rarity score = 189.87 | frequency = 79 / 15000
 Shirt/Jacket - Mingoneck Black | rarity score = 182.93 | frequency = 82 / 15000
-Background - cc0 Sunset | rarity score = 182.93 | frequency = 82 / 15000
 Headphones - Gold | rarity score = 180.72 | frequency = 83 / 15000
-Background - Havana | rarity score = 180.72 | frequency = 83 / 15000
 Shirt/Jacket - Bill Jacket | rarity score = 176.47 | frequency = 85 / 15000
+Background - cc0 Sunset | rarity score = 176.47 | frequency = 85 / 15000
+Background - Havana | rarity score = 172.41 | frequency = 87 / 15000
 Background - This Is Fine | rarity score = 170.45 | frequency = 88 / 15000
 Background - Nerd | rarity score = 170.45 | frequency = 88 / 15000
 Shirt/Jacket - Bobsled Jacket | rarity score = 168.54 | frequency = 89 / 15000
 Shirt/Jacket - Cobra Top | rarity score = 168.54 | frequency = 89 / 15000
 Hat/Helmet - Baseball Cap Purple | rarity score = 161.29 | frequency = 93 / 15000
-Background - Purps | rarity score = 161.29 | frequency = 93 / 15000
 Hat/Helmet - Lumberjack Hat | rarity score = 157.89 | frequency = 95 / 15000
 Balloon - Purple | rarity score = 157.89 | frequency = 95 / 15000
 Shirt/Jacket - Cool G Sweater | rarity score = 154.64 | frequency = 97 / 15000
 Shirt/Jacket - Puffy Coat Pink | rarity score = 154.64 | frequency = 97 / 15000
 Balloon - Yellow | rarity score = 154.64 | frequency = 97 / 15000
+Background - Purps | rarity score = 153.06 | frequency = 98 / 15000
 Shirt/Jacket - Toga | rarity score = 151.52 | frequency = 99 / 15000
 Shirt/Jacket - Fancy Flannel | rarity score = 151.52 | frequency = 99 / 15000
-Background - Gruff | rarity score = 150.00 | frequency = 100 / 15000
 Balloon - Blue | rarity score = 150.00 | frequency = 100 / 15000
 Type - Stork | rarity score = 148.51 | frequency = 101 / 15000
 Hat/Helmet - Knit Yellow | rarity score = 148.51 | frequency = 101 / 15000
 Shirt/Jacket - Scrubs | rarity score = 145.63 | frequency = 103 / 15000
 Hat/Helmet - Bucket Hat Teal | rarity score = 144.23 | frequency = 104 / 15000
+Background - Gruff | rarity score = 142.86 | frequency = 105 / 15000
 Hair - Karen Cut | rarity score = 141.51 | frequency = 106 / 15000
 Hair - Messy Purps | rarity score = 137.61 | frequency = 109 / 15000
 Shirt/Jacket - Tubesock - Cavaliers | rarity score = 137.61 | frequency = 109 / 15000
